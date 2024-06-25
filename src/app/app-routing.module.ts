@@ -6,12 +6,12 @@ import {EmpresaPageComponent} from './pages/empresa-page/empresa-page.component'
 import {AgentePageComponent} from "./pages/agente-page/agente-page.component";
 import {ProductoPageComponent} from "./pages/producto-page/producto-page.component";
 import {SoportePageComponent} from "./pages/soporte-page/soporte-page.component";
-import { LoginDialogComponent} from "./pages/login-dialog/login-diaglog.component";
+import {EmpleadosPageComponent} from "./pages/empleados-page/empleados-page.component";
+import {LoginComponent} from "./pages/login/login.component";
 
 const routes: Routes = [
-  { path: 'login', component: LoginDialogComponent },
-  { path: '', pathMatch: 'full', redirectTo: 'login' },
-  { path: 'home', component: TicketsPageComponent },
+  {path: '', pathMatch: 'full', redirectTo: 'login'},
+  {path: 'login', component: LoginComponent },
   {
     path: 'tickets',
     children: [
@@ -20,6 +20,7 @@ const routes: Routes = [
     ]
   },
   {path: 'empresas', component: EmpresaPageComponent},
+  {path: 'empleado', component: EmpleadosPageComponent},
   {path: 'agente', component: AgentePageComponent},
   {path: 'producto', component: ProductoPageComponent},
   {path: 'soporte', component: SoportePageComponent}

@@ -1,7 +1,7 @@
 <div class="container mt-4">
   <div class="row d-flex justify-content-between bg-dark my-3 py-2 text-center" style="border-radius: 1rem;">
     <div class="col-2">
-      <button type="button" class="btn btn-sm btn-success w-100" (click)="onClickShowDialogPersona()">Agregar</button>
+      <button type="button" class="btn btn-sm btn-success w-100" (click)="onClickShowDialogEmpleado()">Agregar</button>
     </div>
     <div class="col-8">
       <h4 class="text-light">Empleado</h4>
@@ -30,7 +30,7 @@
         <td>{{ empleado.empresa.razonSocial }}</td>
         <td>
           <div class="d-flex justify-content-center">
-            <button type="button" class="btn btn-primary btn-sm">Editar</button>
+            <button type="button" class="btn btn-primary btn-sm" (click)="onClickShowDialogEmpleadoUpdate(empleado)">Editar</button>
           </div>
         </td>
       </tr>

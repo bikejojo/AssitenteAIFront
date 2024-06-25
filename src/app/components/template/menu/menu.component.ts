@@ -30,4 +30,8 @@ export class MenuComponent {
   onRedirectSoportePage() {
     this.router.navigate(['/soporte']);
   }
+
+  onRedirectEmpleadoPage() {
+    this.router.navigate(['/empleado']);
+  }
 }

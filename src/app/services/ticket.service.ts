@@ -16,5 +16,5 @@ export class TicketService {
     this.http.get<Array<TicketModel>>(this.URL + '/all');
 
   public findById = (ticketId: number): Observable<TicketModel> =>
-    this.http.get<TicketModel>(this.URL + '/' + ticketId);
+    this.http.post<TicketModel>(this.URL, ticketId);
 }
