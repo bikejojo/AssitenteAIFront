@@ -6,9 +6,12 @@ import {EmpresaPageComponent} from './pages/empresa-page/empresa-page.component'
 import {AgentePageComponent} from "./pages/agente-page/agente-page.component";
 import {ProductoPageComponent} from "./pages/producto-page/producto-page.component";
 import {SoportePageComponent} from "./pages/soporte-page/soporte-page.component";
+import { LoginDialogComponent} from "./pages/login-dialog/login-diaglog.component";
 
 const routes: Routes = [
-  {path: '', pathMatch: 'full', redirectTo: 'home'},
+  { path: 'login', component: LoginDialogComponent },
+  { path: '', pathMatch: 'full', redirectTo: 'login' },
+  { path: 'home', component: TicketsPageComponent },
   {
     path: 'tickets',
     children: [

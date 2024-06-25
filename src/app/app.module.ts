@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LoginDialogComponent } from './pages/login-dialog/login-diaglog.component';
 import { MenuComponent } from './components/template/menu/menu.component';
 import { TicketsPageComponent } from './pages/tickets-page/tickets-page.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
@@ -23,6 +24,7 @@ import { SoporteDialogComponent } from './pages/soporte-dialog/soporte-dialog.co
 @NgModule({
   declarations: [
     AppComponent,
+    LoginDialogComponent,
     MenuComponent,
     TicketsPageComponent,
     TicketsDetailPageComponent,
